@@ -1,0 +1,186 @@
+/******************************************************************************************************/
+/* PassConectarse.php :  Conectar    utilizo #ContDesign también en ADMINISTRADOR
+/******************************************************************************************************/
+#ContDesing         { height: 300px; max-width: 1200px; background: rgb(65,70,54); margin: 2% 5%;}                /* GENERAL */
+#ContDesing h1      { border: 0px solid green; margin-left: 4%;  padding: 10px; color: white; font-size: 1.2em;}  /* MI PERFIL */
+#ContDesing         { border: 0px solid green;}
+.tope               { border: 0px solid white;  height: 238px; width: 900px;     margin-left: 5%; }               /* EL RESTO MENOS MENSAJE DERECHA*/
+.formuser           { border: 0px solid yellow; width: 500px; position:absolute; margin-left: 5%;}                /* EL RESTO MENOS MENSAJE DERECHA*/
+.tipoent            { border: 0px solid red;}                                                                     /* coloco inixiar sesion + crear mi cuenta */
+.formuser p       { border: 0px solid white; color: white;   width: 120px;  font-size: 1em;}                    /* INICIAR SESION  */
+.crear a          { border: 0px solid white; color: white;   width: 100px;  margin-left: 200px; display:inline; text-decoration: none; font-size: 1em;}   /* CREAR MI CUENTA  */
+.acept              { border: 0px solid red;}                                                                     /* coloco iniciar sesion + crear mi cuenta */
+.olvid a          { border: 0px solid blue;  color: white;  text-decoration: none; margin-left: 220px;}         /* OLVIDO SU CONTRASEÑA  */
+.mensabd           { border: 0px solid red;   width: 250px;  margin-left: 600px;  }                              /* MENSAJES DERECHA */
+
+.tipoent            { display:flex; flex-flow: row nowrap;    align-items: center;}                               /* coloco iniciar sesion + crear mi cuenta */
+.acept              { display:flex; flex-flow: row nowrap;    align-items: center;}                               /* coloco iniciar sesion + crear mi cuenta */
+.tope               { display:flex; flex-flow: column nowrap; }                                                   /* recoloco mensaje derecha */
+
+#ContDesing hr                   { width: 90%;}
+.formuser [placeholder]          { font-size:0.8em;}
+.formuser p                      { border-style: none none solid none; border-width: 1px;}
+.crear a                         { border-style: none none solid none; border-width: 1px;}
+/*.formuser p:hover, a:hover     { border-style: none none ridge none; border-width: 4px; border-color: green;}*/   /* ME SUBRALLA TAMBIEN EL MENU CAB_01 */
+.formuser p:hover                { border-style: none none ridge none; border-width: 4px; border-color: green;}
+.crear a:hover                   { border-style: none none ridge none; border-width: 4px; border-color: green;}
+.formuser [type='text']          { padding: 3px; margin: 4px; width: 200px; }
+.formuser [type='password']      { padding: 3px; margin: 4px; width: 120px; }
+.formuser [type="submit"]        { font-size: 1em; background: rgb(40,53,62); border: 0px; color: white; cursor:pointer; margin-left: 5%;}
+.formuser [type="submit"]:hover  { opacity:1; color: red;}
+.formuser [type="submit"]:active { transform:scale(1.2); }
+.suerte                          { color: white;}
+.Valdatos                        { color: white;}
+.mensabd [type='text']           { color: white; background:rgb(65,70,54);}
+.icon-mail-1    {opacity: 0.7;}
+.icon-key       {opacity: 0.7;}
+.icon-android   {opacity: 0.7;}
+
+/*******************************************************************************************************/
+/* RESPONSIVE   -   Responsive.js */
+/******************************************************************************************************/
+@media screen and (max-width: 800px)
+{
+
+#ContDesing         { height: 450px; margin: 5% 5%;}
+.tope               { height: 338px; width: 405px;}
+.formuser           { height: 237px; width: 380px;}
+
+.tipoent            { width: 95%;}
+.acept              { width: 95%;}
+
+.crear a            { margin-left: 120px;}
+.olvid a            { margin-left: 120px;}
+
+.tope               { display:flex; flex-flow: column nowrap; }
+.mensabd            { width: 250px;  height: 100px; margin-left: 25px;  margin-top: 50%; padding-top: 0px;}
+}
+
+
+/******************************************************************************************************/
+/* PassAlta.php :  Registrar nuevo usuario
+/******************************************************************************************************/
+/* GENERAL */
+#ContDesing2  {
+    border: 0px solid red;
+    height: 650px;
+    max-width: 1200px;
+    background:rgb(65,70,54);
+    margin: 2% 5%;
+}
+#ContDesing2 h1 {
+    margin-left: 4%;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#ContDesing2 hr { width: 90%; background-color: grey;}
+
+.tope2 {                                                            /*  CUADRO DENTRO DEL CONTENEDOR: TODOS ELEMENTOS */
+    border: 0px solid white;
+    display:flex;
+    flex-flow:
+    column nowrap;
+    height: 570px;
+    width: 900px;
+    margin-left: 5%;
+}
+
+.mensabd2{                                                          /* MENSAJES DERECHA */
+    border: 0px solid red;
+    width: 300px;
+    margin-left: 600px;
+}
+
+.suerte2    { color: white;}
+.Valdatos2  { color: white;}
+
+.formuser2{                                                         /* FORMULARIO + CONECTARSE/CUENTA*/
+    border: 0px solid yellow;
+    width: 500px;
+    position:absolute;
+    margin-left: 5%;
+}
+
+.formuser2 p {                                                      /* INICIAR SESION  */
+    border: 0px solid white;
+    color: white;
+    width: 120px;
+    font-size: 1em;
+    display:inline;
+}
+
+.tipoent2{                                                         /* coloco Conectarse + crear mi cuenta */
+    border: 0px solid red;
+    margin: 5px 0px 15px 0px;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.crear2 a{                                                          /* coloco Conectarse */
+    border: 0px solid white;
+    color: white;
+    width: 100px;
+    margin-left: 200px;
+    display:inline;
+    text-decoration:
+    none;
+    font-size: 1em;
+}
+.acept2{                                                            /* submit */
+    border: 0px solid red;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 4px;
+}                                   /* coloco iniciar sesion + crear mi cuenta */
+
+
+
+
+
+.formuser2 [placeholder]          { font-size:0.8em;}
+.formuser2 p:hover                { border-style: none none ridge none; border-width: 4px; border-color: green;}
+.crear2    a:hover                { border-style: none none ridge none; border-width: 4px; border-color: green;}
+.formuser2 [type='text']          { padding: 3px; margin: 4px; width: 200px; line-height: px;}
+.formuser2 [type='password']      { padding: 3px; margin: 4px; width: 120px; line-height: 5px;}
+.formuser2 [type="submit"]        { font-size: 1em; background: rgb(40,53,62); border: 0px; color: white; cursor:pointer; margin-left: 5%;}
+.formuser2 [type="submit"]:hover  { opacity:1; color: red;}
+.formuser2 [type="submit"]:active { transform:scale(1.2); }
+.mensabd2 [type='text']           { color: white; background:rgb(65,70,54);}
+.icon-mail-1    {opacity: 0.7;}
+.icon-key       {opacity: 0.7;}
+.icon-android   {opacity: 0.7;}
+
+span {color: white;}
+
+
+
+
+
+/*******************************************************************************************************/
+/* RESPONSIVE   -   Responsive.js */
+/******************************************************************************************************/
+@media screen and (max-width: 800px)
+{
+
+#ContDesing2         { height: 450px; margin: 5% 5%;}
+.tope2               { height: 388px; width: 405px;}
+.formuser2           { height: 237px; width: 380px;}
+
+.tipoent2            { width: 95%;}
+.acept2              { width: 95%; margin-left: 12px;}
+
+.crear2 a            { margin-left: 120px;}
+
+.tope2               { display:flex; flex-flow: column nowrap; }
+.mensabd2            { width: 350px;  height: 200px; margin-left: 25px;  margin-top: 60%; padding-top: 0px;}
+
+
+
+/*.mensabd           { border: 1px solid red;   width: 250px;  margin-left: 60px; margin-bottom: 50%;}             */
+
+}
